@@ -7,13 +7,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh pages -d build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "script": {
-    "predeploy": "npm run build",
-    "deploy": "gh pages -d build"
-  },
+
   "dependencies": {
     "framer-motion": "^11.3.19",
     "locomotive-scroll": "^5.0.0-beta.13",
